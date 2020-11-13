@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: summerFont;
+    src: url(../fonts/summerFont.ttf);
+  }
+  @font-face {
+    font-family: sweetFont;
+    
+    src: url(../fonts/sweetFont.otf);
+  }
+.carousel-item{
+    height: 500px;
+    
+}
+
+.menuOption{
+    font-family: sweetFont;
+    font-weight: bolder;
+    color: rgb(226, 68, 121);
+    font-size: 37px;
+}
+
+.hrH{
+    height: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
