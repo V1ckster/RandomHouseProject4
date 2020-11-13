@@ -2,29 +2,82 @@
 @font-face {
     font-family: summerFont;
     src: url(../fonts/summerFont.ttf);
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: sweetFont;
-    
     src: url(../fonts/sweetFont.otf);
-  }
+}
+
+@font-face {
+    font-family: cinnamonFont;
+    src: url(../fonts/cinnamon\ cake.ttf);
+}
+
+
 .carousel-item{
-    height: 500px;
-    
+  
+        width: 100%;
+        height: 500px;
+
 }
 
 .menuOption{
     font-family: sweetFont;
     font-weight: bolder;
     color: rgb(226, 68, 121);
-    font-size: 37px;
+    font-size: 30px;
+    font-weight: bold;
+
 }
 
-.hrH{
-    height: 10px;
-}
 
 ul{
     list-style-type: none;
     padding: 0;
 }
+
+.menuOption{
+    width: 78%;
+
+}
+.menuOption:hover{
+   background-color: hotpink;
+}
+
+.menuOption:active{
+
+    box-shadow: 0 5px hotpink;
+    transform: translateY(4px);
+    color: red;
+
+}
+
+.icecreamIcon{
+    height: 60px;
+}
+
+.fontSize{
+    font-size: 25px;
+}
+
+.fontAndColor{
+    
+    font-weight: bolder;
+    color:black;
+    font-family:cinnamonFont ;
+}
+#injectHere{
+    background-color:  rgb(238, 194, 208);
+    padding-right: 0px;
+
+    
+}
+
+.scroll{
+    overflow-x:  none;
+    overflow-y: auto;
+    height: 575px;
+    
+}
+
