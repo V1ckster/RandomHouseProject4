@@ -39,7 +39,7 @@ ul{
 .colorPink{
     color: rgb(255, 250, 251);
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 23px;
     background-color: rgb(185, 109, 109);
     border-radius: 20px;
     opacity: .7;
@@ -83,7 +83,7 @@ ul{
 
 .scroll{
     overflow-x:  none;
-    overflow-y: auto;.
+    overflow-y: auto;
     height: 500px;
     
 }
@@ -95,7 +95,3 @@ ul{
     object-fit: cover;
 }
 
-.navColor{
-    border: solid pink;
-
-}

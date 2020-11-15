@@ -1,5 +1,6 @@
 let injectHere = document.getElementById('injectHere');
 
+// inner nav bar
 let sneakPeak = document.getElementById('menuBtn1');
 let flavors = document.getElementById("menuBtn2");
 let milkshakes = document.getElementById("menuBtn3");
@@ -7,13 +8,14 @@ let middleEastern = document.getElementById("menuBtn4");
 let specialtyItems = document.getElementById("menuBtn5");
 let randomFlavor = document.getElementById("menuBtn6");
 
+// outer nav bar 
+let sneakPeak2 = document.getElementById('menuBtn12');
+let flavors2 = document.getElementById("menuBtn22");
+let milkshakes2 = document.getElementById("menuBtn32");
+let middleEastern2 = document.getElementById("menuBtn42");
+let specialtyItems2 = document.getElementById("menuBtn52");
+let randomFlavor2 = document.getElementById("menuBtn62");
 
-let icon1 = document.getElementById("icon1");
-let icon2 = document.getElementById("icon2");
-let icon3 = document.getElementById("icon3");
-let icon4 = document.getElementById("icon4");
-let icon5 = document.getElementById("icon5");
-let icon6 = document.getElementById("icon6");
 
 
 let oneFlavor = document.getElementById("oneFlavor");
@@ -28,10 +30,11 @@ let randomFlavorPick = ["CHOCO-KAY", "SALTED CARAMEL"," BASTANI SONATI", "CHOCO-
                   "'THE ONE WITH NUTELLA'","IT'S CINNA-BOMB", "S'MORE PLEASE!",  "STRAWBERRY CHEESECAKE", "PLAIN JANE"];
 
 
-
+// outputs one flavor
 oneFlavor.addEventListener("click", function()
 {
     let ran = Math.floor((Math.random() * randomFlavorPick.length));
+
     output1.innerHTML = randomFlavorPick[ran];
     output2.innerHTML = null;
     output3.innerHTML = null;
@@ -40,6 +43,7 @@ oneFlavor.addEventListener("click", function()
 
 });
 
+// outputs two flavors
 twoFlavor.addEventListener("click", function(){
     let ran = Math.floor((Math.random() * randomFlavorPick.length));
     let ran2 =Math.floor((Math.random() * randomFlavorPick.length));
@@ -49,6 +53,7 @@ twoFlavor.addEventListener("click", function(){
     output3.innerHTML = null;
 });
 
+// outputs three flavors
 threeFlavor.addEventListener("click", function(){
     let ran = Math.floor((Math.random() * randomFlavorPick.length));
     let ran2 =Math.floor((Math.random() * randomFlavorPick.length));
@@ -58,6 +63,9 @@ threeFlavor.addEventListener("click", function(){
     output2.innerHTML = randomFlavorPick[ran2];
     output3.innerHTML = randomFlavorPick[ran3];
 });
+
+
+//inner nav bar click events
 
 sneakPeak.addEventListener("click", function(){
 
@@ -184,6 +192,9 @@ randomFlavor.addEventListener("click", function(){
     icon2.setAttribute("class", "wiggle");
 });
 
+
+
+
 function loadData(url){
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -197,3 +208,130 @@ function loadData(url){
     xhttp.open("GET", url, true);
     xhttp.send();  
 }
+
+// outer nav bar
+sneakPeak2.addEventListener("click", function(){
+
+    console.log("clicked");
+    loadData("../pages/randomFlavor.html");
+
+    icon1.removeAttribute("class", "wiggle");
+    icon1.setAttribute("class", "spinner");
+
+    icon2.removeAttribute("class", "spinner");  // for loop and function can make this code cleaner
+    icon3.removeAttribute("class", "spinner");
+    icon4.removeAttribute("class", "spinner");
+    icon5.removeAttribute("class", "spinner");
+    icon6.removeAttribute("class", "spinner");
+
+
+    icon2.setAttribute("class", "wiggle");
+    icon3.setAttribute("class", "wiggle");
+    icon4.setAttribute("class", "wiggle");
+    icon5.setAttribute("class", "wiggle");
+    icon6.setAttribute("class", "wiggle");
+    
+});
+
+
+flavors2.addEventListener("click", function(){
+    loadData("../pages/flavors.html");
+
+    icon2.removeAttribute("class", "wiggle");
+    icon2.setAttribute("class", "spinner");
+
+    icon1.removeAttribute("class", "spinner");
+    icon3.removeAttribute("class", "spinner");
+    icon4.removeAttribute("class", "spinner");
+    icon5.removeAttribute("class", "spinner");
+    icon6.removeAttribute("class", "spinner");
+
+
+    icon1.setAttribute("class", "wiggle");
+    icon3.setAttribute("class", "wiggle");
+    icon4.setAttribute("class", "wiggle");
+    icon5.setAttribute("class", "wiggle");
+    icon6.setAttribute("class", "wiggle");
+});
+
+milkshakes2.addEventListener("click", function(){
+    loadData("../pages/milkshakes.html");
+    
+    icon3.removeAttribute("class", "wiggle");
+    icon3.setAttribute("class", "spinner");
+
+    icon1.removeAttribute("class", "spinner");
+    icon2.removeAttribute("class", "spinner");
+    icon4.removeAttribute("class", "spinner");
+    icon5.removeAttribute("class", "spinner");
+    icon6.removeAttribute("class", "spinner");
+
+
+    icon1.setAttribute("class", "wiggle");
+    icon2.setAttribute("class", "wiggle");
+    icon4.setAttribute("class", "wiggle");
+    icon5.setAttribute("class", "wiggle");
+    icon6.setAttribute("class", "wiggle");
+
+
+});
+
+middleEastern2.addEventListener("click", function(){
+    loadData("../pages/middleEastern.html");
+
+    icon4.removeAttribute("class", "wiggle");
+    icon4.setAttribute("class", "spinner");
+
+    icon1.removeAttribute("class", "spinner");
+    icon3.removeAttribute("class", "spinner");
+    icon2.removeAttribute("class", "spinner");
+    icon5.removeAttribute("class", "spinner");
+    icon6.removeAttribute("class", "spinner");
+
+
+    icon1.setAttribute("class", "wiggle");
+    icon3.setAttribute("class", "wiggle");
+    icon2.setAttribute("class", "wiggle");
+    icon5.setAttribute("class", "wiggle");
+    icon6.setAttribute("class", "wiggle");
+});
+
+specialtyItems2.addEventListener("click", function(){
+    loadData("../pages/specialtyItems.html");
+
+    icon5.removeAttribute("class", "wiggle");
+    icon5.setAttribute("class", "spinner");
+
+    icon1.removeAttribute("class", "spinner");
+    icon3.removeAttribute("class", "spinner");
+    icon4.removeAttribute("class", "spinner");
+    icon2.removeAttribute("class", "spinner");
+    icon6.removeAttribute("class", "spinner");
+
+
+    icon1.setAttribute("class", "wiggle");
+    icon3.setAttribute("class", "wiggle");
+    icon4.setAttribute("class", "wiggle");
+    icon2.setAttribute("class", "wiggle");
+    icon6.setAttribute("class", "wiggle");
+});
+
+randomFlavor2.addEventListener("click", function(){
+    loadData("../pages/carousel.html");
+
+    icon6.removeAttribute("class", "wiggle");
+    icon6.setAttribute("class", "spinner");
+
+    icon1.removeAttribute("class", "spinner");
+    icon3.removeAttribute("class", "spinner");
+    icon4.removeAttribute("class", "spinner");
+    icon5.removeAttribute("class", "spinner");
+    icon2.removeAttribute("class", "spinner");
+
+
+    icon1.setAttribute("class", "wiggle");
+    icon3.setAttribute("class", "wiggle");
+    icon4.setAttribute("class", "wiggle");
+    icon5.setAttribute("class", "wiggle");
+    icon2.setAttribute("class", "wiggle");
+});

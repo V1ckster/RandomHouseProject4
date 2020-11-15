@@ -19,91 +19,114 @@
   <div class="container-fluid ">
 
     <br><br>
+    <!-- nav bar when view scale is medium ad small -->
 
     <div class="row py-5 d-flex justify-content-center  ">
       <div class="col-12 navColor px-0 navColor">
         <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 d-lg-none">
           <a class="navbar-brand " href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <ul>
-                <li class=" py-2" > <img class="spinner" id="icon1" src="images/icecreamIcon.png" height="50px"><button data-toggle="collapse" data-target="#navbarNavAltMarkup" 
-                    id="menuBtn1"  type="button icecreamIcon" class="btn btn-light menuOption" > Random flavor generator</button> </li>
-      
-                <li class=" py-2"> <img class="wiggle" id="icon2" src="images/icecreamIcon.png" height="50px"><button data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    id="menuBtn2" type="button" class="btn btn-light menuOption"> Ice cream
-                    flavors</button> </li>
-                <li class=" py-2"> <img class="wiggle" id="icon3" src="images/icecreamIcon.png" height="50px"><button data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    id="menuBtn3" type="button" class="btn btn-light menuOption"> Milshakes
+                <li class=" py-2"> <img class="spinner " id="icon1" src="images/icecreamIcon.png" height="50px"><button
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup" id="menuBtn1" type="button icecreamIcon"
+                    class="btn btn-light menuOption"> Random flavor generator</button> </li>
+
+                <li class=" py-2"> <img class="wiggle" id="icon2" src="images/icecreamIcon.png" height="50px"><button
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup" id="menuBtn2" type="button"
+                    class="btn btn-light menuOption"> Ice cream flavors</button> </li>
+                <li class=" py-2"> <img class="wiggle" id="icon3" src="images/icecreamIcon.png" height="50px"><button
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup" id="menuBtn3" type="button"
+                    class="btn btn-light menuOption"> Milshakes
                   </button></li>
-      
+
                 <li class=" py-2"> <img class="wiggle" id="icon4" src="images/icecreamIcon.png" height="50px">
-                  <button data-toggle="collapse" data-target="#navbarNavAltMarkup" id="menuBtn4" type="button4" class="btn btn-light menuOption">Middle-East Favorits</button></li>
-      
-                <li class=" py-2"> <img class="wiggle" id="icon5" src="images/icecreamIcon.png" height="50px"><button data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    id="menuBtn5" type="button" class="btn btn-light menuOption"> Specialty
+                  <button data-toggle="collapse" data-target="#navbarNavAltMarkup" id="menuBtn4" type="button4"
+                    class="btn btn-light menuOption">Middle-East Favorits</button></li>
+
+                <li class=" py-2"> <img class="wiggle" id="icon5" src="images/icecreamIcon.png" height="50px"><button
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup" id="menuBtn5" type="button"
+                    class="btn btn-light menuOption"> Specialty
                     Item</button></li>
-      
-                <li class=" py-2"> <img class="wiggle" id="icon6" src="images/icecreamIcon.png" height="50px"><button data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    id="menuBtn6" type="button" class="btn btn-light menuOption">Sneak Peak</button> </li>
+
+                <li class=" py-2"> <img class="wiggle" id="icon6" src="images/icecreamIcon.png" height="50px"><button
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup" id="menuBtn6" type="button"
+                    class="btn btn-light menuOption">Sneak Peak</button> </li>
               </ul>
-      
+
             </div>
           </div>
         </nav>
 
       </div>
-      <div class="col-lg-5 col-sm-12 px-0" id="injectHere">
+
+      <!-- inner container -->
+
+      <div class="col-lg-6 col-12 px-0" id="injectHere">
         <div class="container backgroundImage1 ">
 
           <div class="row d-flex justify-content-center">
-            <div class="col-12 py-4"><h3 class = "text-center"><b>Need help choosing an ice cream flavor?</b></h3></div>
-        
-            <div class="col-12 d-flex justify-content-center py-4"><h5>Push a button to choose one or more of our delicious flavors!</h5></div>
-            <div class="col-3"><button id = "oneFlavor" type="button" class="btn btn-secondary btn-sm">1 flavor</button></div>
-            <div class="col-3"><button id = "twoFlavor" type="button" class="btn btn-secondary btn-sm">2 flavors</button></div>
-            <div class="col-3"><button id = "threeFlavor" type="button" class="btn btn-secondary btn-sm">3 flavors</button></div>
-        
-        
-            <div  class="col-10 py-3 text-center"><h2 id = "output1"></h2></div>
-            <div  class="col-10 text-center"><h2 id = "output2"></h2></div>
-            <div  class="col-10 py-3 text-center"><h2 id = "output3"></h2></div>
-        
+            <div class="col-12 py-4">
+              <h3 class="text-center"><b>Need help choosing an ice cream flavor?</b></h3>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center py-4">
+              <h5>Push a button to choose one or more of our delicious flavors!</h5>
+            </div>
+            <div class="col-3"><button id="oneFlavor" type="button" class="btn btn-secondary btn-sm">1 flavor</button>
+            </div>
+            <div class="col-3"><button id="twoFlavor" type="button" class="btn btn-secondary btn-sm">2 flavors</button>
+            </div>
+            <div class="col-3"><button id="threeFlavor" type="button" class="btn btn-secondary btn-sm">3
+                flavors</button></div>
+
+
+            <div class="col-10 py-3 text-center">
+              <h2 id="output1"></h2>
+            </div>
+            <div class="col-10 text-center">
+              <h2 id="output2"></h2>
+            </div>
+            <div class="col-10 py-3 text-center">
+              <h2 id="output3"></h2>
+            </div>
           </div>
         </div>
-        
-        
+      </div>
+
+        <!-- side menu but hidden at medium and small view scale -->
+        <div class="col-5 py-3 d-none d-lg-block">
+          <ul>
+            <li class=" py-2 "><img class="spinner"  src="images/icecreamIcon.png" height="50px"> <button
+                id="menuBtn12" type="button icecreamIclgon" class="btn btn-light menuOption"> Random flavor
+                generator</button> </li>
+
+            <li class=" py-2"> <img class="wiggle"  src="images/icecreamIcon.png" height="50px"><button
+                id="menuBtn22" type="button" class="btn btn-light menuOption"> Ice cream
+                flavors</button> </li>
+            <li class=" py-2"><img class="wiggle"src="images/icecreamIcon.png" height="50px">
+              <button id="menuBtn32" type="button" class="btn btn-light menuOption"> Milshakes
+              </button></li>
+
+            <li class=" py-2"> <img class="wiggle"  src="images/icecreamIcon.png" height="50px">
+              <button id="menuBtn42" type="button4" class="btn btn-light menuOption">Middle-East Favorits</button>
+            </li>
+
+            <li class=" py-2"> <img class="wiggle"  src="images/icecreamIcon.png" height="50px"><button
+                id="menuBtn52" type="button" class="btn btn-light menuOption"> Specialty
+                Item</button></li>
+
+            <li class=" py-22"> <img class="wiggle"  src="images/icecreamIcon.png" height="50px"><button
+                id="menuBtn62" type="button" class="btn btn-light menuOption">Sneak Peak</button> </li>
+          </ul>
+        </div>
 
       </div>
 
-      <div class="col-3 px-0 py-3 d-none d-md-block"> 
-        <ul>
-          <li class=" py-2 "> <img class="spinner" id="icon1" src="images/icecreamIcon.png" height="50px"><button
-              id="menuBtn1" type="button icecreamIcon" class="btn btn-light menuOption"> Random flavor generator</button> </li>
-
-          <li class=" py-2"> <img class="wiggle" id="icon2" src="images/icecreamIcon.png" height="50px"><button
-              id="menuBtn2" type="button" class="btn btn-light menuOption"> Ice cream
-              flavors</button> </li>
-          <li class=" py-2"> <img class="wiggle" id="icon3" src="images/icecreamIcon.png" height="50px"><button
-              id="menuBtn3" type="button" class="btn btn-light menuOption"> Milshakes
-            </button></li>
-
-          <li class=" py-2"> <img class="wiggle" id="icon4" src="images/icecreamIcon.png" height="50px">
-            <button id="menuBtn4" type="button4" class="btn btn-light menuOption">Middle-East Favorits</button></li>
-
-          <li class=" py-2"> <img class="wiggle" id="icon5" src="images/icecreamIcon.png" height="50px"><button
-              id="menuBtn5" type="button" class="btn btn-light menuOption"> Specialty
-              Item</button></li>
-
-          <li class=" py-2"> <img class="wiggle" id="icon6" src="images/icecreamIcon.png" height="50px"><button
-              id="menuBtn6" type="button" class="btn btn-light menuOption">Sneak Peak</button> </li>
-        </ul>
-
-
-      </div>
 
     </div>
 
@@ -124,7 +147,7 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
-  
+
   <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
