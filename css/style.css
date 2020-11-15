@@ -43,7 +43,7 @@ ul{
     background-color: rgb(185, 109, 109);
     border-radius: 20px;
     opacity: .7;
-    font-family: cinnamonFont;
+    font-family: cinnamonFon  ht;
 
 }
 .menuOption{
@@ -77,12 +77,13 @@ ul{
     font-family:cinnamonFont ;
 }
 #injectHere{
-    background-color:  rgb(238, 194, 208);   
+    background-color:  rgb(238, 194, 208); 
+
 }
 
 .scroll{
     overflow-x:  none;
-    overflow-y: auto;
+    overflow-y: auto;.
     height: 500px;
     
 }
@@ -92,4 +93,9 @@ ul{
     width: 100%;
     height: 100% !important;
     object-fit: cover;
+}
+
+.navColor{
+    border: solid pink;
+
 }

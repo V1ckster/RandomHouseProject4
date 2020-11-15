@@ -16,13 +16,58 @@ let icon5 = document.getElementById("icon5");
 let icon6 = document.getElementById("icon6");
 
 
+let oneFlavor = document.getElementById("oneFlavor");
+let twoFlavor = document.getElementById("twoFlavor");
+let threeFlavor = document.getElementById("threeFlavor");
+
+let output1 = document.getElementById("output1");
+let output2 = document.getElementById("output2");
+let output3 = document.getElementById("output3");
+
+let randomFlavorPick = ["CHOCO-KAY", "SALTED CARAMEL"," BASTANI SONATI", "CHOCO-MINT", "THE DIRTY TUX", "PINK POLKA DOT", "A 'WAKE ME UP'", 
+                  "'THE ONE WITH NUTELLA'","IT'S CINNA-BOMB", "S'MORE PLEASE!",  "STRAWBERRY CHEESECAKE", "PLAIN JANE"];
+
+
+
+oneFlavor.addEventListener("click", function()
+{
+    let ran = Math.floor((Math.random() * randomFlavorPick.length));
+    output1.innerHTML = randomFlavorPick[ran];
+    output2.innerHTML = null;
+    output3.innerHTML = null;
+    
+
+
+});
+
+twoFlavor.addEventListener("click", function(){
+    let ran = Math.floor((Math.random() * randomFlavorPick.length));
+    let ran2 =Math.floor((Math.random() * randomFlavorPick.length));
+
+    output1.innerHTML = randomFlavorPick[ran];
+    output2.innerHTML = randomFlavorPick[ran2];
+    output3.innerHTML = null;
+});
+
+threeFlavor.addEventListener("click", function(){
+    let ran = Math.floor((Math.random() * randomFlavorPick.length));
+    let ran2 =Math.floor((Math.random() * randomFlavorPick.length));
+    let ran3 = Math.floor((Math.random() * randomFlavorPick.length));
+
+    output1.innerHTML = randomFlavorPick[ran];
+    output2.innerHTML = randomFlavorPick[ran2];
+    output3.innerHTML = randomFlavorPick[ran3];
+});
+
 sneakPeak.addEventListener("click", function(){
-    loadData("../pages/carousel.html");
+
+    console.log("clicked");
+    loadData("../pages/randomFlavor.html");
 
     icon1.removeAttribute("class", "wiggle");
     icon1.setAttribute("class", "spinner");
 
-    icon2.removeAttribute("class", "spinner");
+    icon2.removeAttribute("class", "spinner");  // for loop and function can make this code cleaner
     icon3.removeAttribute("class", "spinner");
     icon4.removeAttribute("class", "spinner");
     icon5.removeAttribute("class", "spinner");
@@ -120,7 +165,7 @@ specialtyItems.addEventListener("click", function(){
 });
 
 randomFlavor.addEventListener("click", function(){
-    loadData("../pages/randomFlavor.html");
+    loadData("../pages/carousel.html");
 
     icon6.removeAttribute("class", "wiggle");
     icon6.setAttribute("class", "spinner");
@@ -148,6 +193,7 @@ function loadData(url){
             injectHere.innerHTML = this.responseText;
         }
     };
+
     xhttp.open("GET", url, true);
     xhttp.send();  
 }
