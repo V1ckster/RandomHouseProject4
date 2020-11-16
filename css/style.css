@@ -77,17 +77,9 @@ ul{
     font-family:cinnamonFont ;
 }
 #injectHere{
-    background-color:  rgb(238, 194, 208); 
+    background-color:  pink; 
 
 }
-
-.scroll{
-    overflow-x:  none;
-    overflow-y: auto;
-    height: 500px;
-    
-}
-
 
 .carousel-item img{
     width: 100%;
@@ -95,3 +87,9 @@ ul{
     object-fit: cover;
 }
 
+.backgroundImage1{
+    background-color: pink;
+    overflow-x:  none;
+    overflow-y: auto;
+    height: 500px;
+}

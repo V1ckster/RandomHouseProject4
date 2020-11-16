@@ -211,9 +211,52 @@ function loadData(url){
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            let respText = this.responseText;  
             // Typical action to be performed when the document is ready:
-            console.log(this.responseText);
-            injectHere.innerHTML = this.responseText;
+            console.log(respText);
+            injectHere.innerHTML = respText;
+
+            // reruns javascript for the random flavor page that gets injected
+            if(url === '../pages/randomFlavor.html'){
+                let oneFlavor2 = document.getElementById("oneFlavor2");
+                let twoFlavor2 = document.getElementById("twoFlavor2");
+                let threeFlavor2 = document.getElementById("threeFlavor2");
+
+                let output1 = document.getElementById("output1");
+                let output2 = document.getElementById("output2");
+                let output3 = document.getElementById("output3");
+
+
+                oneFlavor2.addEventListener("click", function(){
+                    
+                    let ran = Math.floor((Math.random() * randomFlavorPick.length));
+                    console.log(randomFlavorPick[ran]);
+                    output1.innerHTML = randomFlavorPick[ran];
+                    output2.innerHTML = null;
+                    output3.innerHTML = null;
+
+                });
+                // outputs two flavors
+                twoFlavor2.addEventListener("click", function(){
+                    let ran = Math.floor((Math.random() * randomFlavorPick.length));
+                    let ran2 =Math.floor((Math.random() * randomFlavorPick.length));
+
+                    output1.innerHTML = randomFlavorPick[ran];
+                    output2.innerHTML = randomFlavorPick[ran2];
+                    output3.innerHTML = null;
+                });
+
+                // outputs three flavors
+                threeFlavor2.addEventListener("click", function(){
+                    let ran = Math.floor((Math.random() * randomFlavorPick.length));
+                    let ran2 =Math.floor((Math.random() * randomFlavorPick.length));
+                    let ran3 = Math.floor((Math.random() * randomFlavorPick.length));
+
+                    output1.innerHTML = randomFlavorPick[ran];
+                    output2.innerHTML = randomFlavorPick[ran2];
+                    output3.innerHTML = randomFlavorPick[ran3];
+                });
+            }
         }
     };
 
