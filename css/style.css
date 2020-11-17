@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: summerFont;
-    src: url(../fonts/summerFont.ttf);
+    font-family: happyFont;
+    src: url(../fonts/SpotMonkey-zLO0.ttf);
 }
 
 @font-face {
@@ -14,7 +14,11 @@
     src: url(../fonts/cinnamon\ cake.ttf);
 }
 
+.happyFont{
+    font-family: happyFont;
+    color: white;
 
+}
 .carousel-item{
   
         width: 100%;
@@ -58,7 +62,7 @@ ul{
 
     box-shadow: 0 5px hotpink;
     transform: translateY(4px);
-    color: red;
+
 
 }
 
@@ -73,12 +77,8 @@ ul{
 .fontAndColor{
     
     font-weight: bolder;
-    color:black;
+    color:white;
     font-family:cinnamonFont ;
-}
-#injectHere{
-    background-color:  pink; 
-
 }
 
 .carousel-item img{
@@ -88,8 +88,11 @@ ul{
 }
 
 .backgroundImage1{
-    background-color: pink;
+    background-image: url("../images/o.jpg");
     overflow-x:  none;
     overflow-y: auto;
     height: 500px;
+    object-fit: contain;
+    height: 500px;
 }
+
