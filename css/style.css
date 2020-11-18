@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 @font-face {
     font-family: happyFont;
@@ -131,7 +131,7 @@ ul{
 
 .box1{
     background-color: rgb(247, 229, 229);
-    opacity: .7;
+    opacity: .8;
 
 }
 
@@ -139,7 +139,7 @@ ul{
     font-family: plainBold;
     color: rgb(0, 0, 0);
     
-=======
+}
 .Header{
 
     
@@ -276,5 +276,5 @@ ul{
 .contactUsMargin{
 
     margin-left: 22%;
->>>>>>> 437a6f59c298fdecf4e35fee254d5fee922b7e1d
+
 }
