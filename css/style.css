@@ -205,6 +205,12 @@ ul{
     font-family: plainBold;
 }
 
+.funFont{
+    font-family: sweetFont;
+    font-weight: bold;
+    font-size: 45px;
+}
+
 .ytVidMargin{
 
    margin-left: 15%;
@@ -278,4 +284,8 @@ ul{
 
     margin-left: 22%;
 
+}
+
+.padRight{
+    padding-right: -10px;
 }

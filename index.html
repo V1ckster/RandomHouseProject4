@@ -30,7 +30,7 @@
             <div class="col">
                 <ul class="nav align-items-end d-flex justify-content-center Header ">
                     <li class="nav-item">
-                        <a class="nav-link active pinkText " href="#">Menu</a>
+                        <a class="nav-link active pinkText " href="#Menu1">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active pinkText" href="#About1">About</a>
@@ -68,6 +68,7 @@
         <br><br>
         <!-- nav bar when view scale is medium ad small -->
         <div class="row py-5 d-flex justify-content-center  ">
+            <div class="col-12 d-flex justify-content-center aboutFontSize pulse"><h2>Menu</h2></div>
 
             <!-- nav var when the container is medium or small scale view -->
             <div class="col-12 navColor px-0 navColor">
@@ -120,30 +121,46 @@
 
 
             <!-- inner container - html injection-->
-            <div class="col-lg-6 col-12 px-0 py-5" id="injectHere">
-                <div class="container backgroundImage1 ">
+               
+            
+                <div class="col-lg-6 col-12 px-0 py-5" id="injectHere">
+                    
+                    <div class="container backgroundImage1 ">
 
-                    <div class="row d-flex justify-content-center ">
-                        <div class="col-10 py-4"><h3 class = "text-center happyFont py-3">Do you need help choosing an ice cream flavor?</h3></div>
-                        <div class="col-12 py-3"></div>
-                        <div class="col-3 d-flex justify-content-center  py-3"><button id = "oneFlavor" type="button" class="btn-lg btn-success wiggle">1 flavor</button></div>
-                        <div class="col-3 d-flex justify-content-center  py-3"><button id = "twoFlavor" type="button" class="btn-lg btn-success wiggle">2 flavors</button></div>
-                        <div class="col-3 d-flex justify-content-center  py-3"><button id = "threeFlavor" type="button" class="btn-lg btn-success wiggle">3 flavors</button></div>
-                        <div class="col-10 py-3"></div>
-                    
-                        <div  class="col-8 text-center happyFont2 floater"><h3 id = "output1"></h3></div>
-                        <div class="col-10 py-2"></div>
-                        <div  class="col-8 text-center happyFont2 floater"><h3 id = "output2"></h3></div>
-                        <div class="col-10 py-2"></div>
-                        <div  class="col-8 text-center happyFont floater"><h3 id = "output3"></h3></div>
-                    
-                      </div>
+                        <div class="row d-flex justify-content-center ">
+                            <div class="col-10 py-4">
+                                <h3 class="text-center happyFont py-3">Do you need help choosing an ice cream flavor?
+                                </h3>
+                            </div>
+                            <div class="col-12 py-3"></div>
+                            <div class="col-3 d-flex justify-content-center  py-3"><button id="oneFlavor" type="button"
+                                    class="btn-lg btn-success wiggle">1 flavor</button></div>
+                            <div class="col-3 d-flex justify-content-center  py-3"><button id="twoFlavor" type="button"
+                                    class="btn-lg btn-success wiggle">2 flavors</button></div>
+                            <div class="col-3 d-flex justify-content-center  py-3"><button id="threeFlavor"
+                                    type="button" class="btn-lg btn-success wiggle">3 flavors</button></div>
+                            <div class="col-10 py-3"></div>
+
+                            <div class="col-8 text-center happyFont2 floater">
+                                <h3 id="output1"></h3>
+                            </div>
+                            <div class="col-10 py-2"></div>
+                            <div class="col-8 text-center happyFont2 floater">
+                                <h3 id="output2"></h3>
+                            </div>
+                            <div class="col-10 py-2"></div>
+                            <div class="col-8 text-center happyFont2 floater">
+                                <h3 id="output3"></h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
                 </div>
-
-
-
-
-            </div>
+            
 
             <!-- side menu but hidden at medium and small view scale -->
             <div class="col-5 py-3 d-none d-lg-block d-lg-block">
@@ -196,55 +213,61 @@
 
 
 
-    <div id="ancPacks" class="container py-5">
-        <div class="row ">
+    <div id="ancPacks" class="container-fluid py-5 pinkBG">
+        <div class="container">
+            <div class="row pinkBG ">
 
 
-            <div class="row packages">
-                <div class="col-12 col-lg-6">
-                    <img src="images/nitrogenimg.jpg" height="350px" width="100%" class="card-img packImg" alt="...">
-                </div>
-
-
-                <div class="col-lg-6 col-12 py-4">
-                    <div class="card-body">
-            
-                        <p class=" aboutFontSize">Enjoy the shade of our cherry trees as
-                            you join us during our spring time celebration. We invite you to our orchards
-                            for cherry, strawberry, and apple picking that is open all day. We end each
-                            evening with fresh, vegetable centric dinners along with a live show from local
-                            musicians.</p>
-
+                <div class="row packages ">
+                    <div class="col-12">
+                        <div id="About1" class="text-center pb-5 aboutFontSize pulse"><h2>About me</h2></div>
                     </div>
-                </div>
-
-                <div class="col-sm-12 d-lg-none d-md-block ">
-                    <iframe class="ytVidMargin" src="https://www.youtube.com/embed/dgP3JRh8XOM" width="100%"
-                        height="350px" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-
-
-                <div class=" col-lg-6 col-md-12 py-4 ">
-                    <div class="card-body">
-                        <p class="aboutFontSize">Open Tuesday - Sunday 1:00pm - 10:00pm <br>
-                            Closed Monday<br>
-                            Phone Number: (209) 250-0605<br>
-                            Email: info@hofrandom.com<br>
-                            Address: 80 South 1st Street, Turlock, California 95380, United States</p>
+                    <div class="col-12 col-lg-6">
+                        <img src="images/nitrogenimg.jpg" height="350px" width="100%" class="card-img packImg"
+                            alt="...">
                     </div>
 
-                    
+
+                    <div class="col-lg-6 col-12 py-4">
+                        <div class="card-body">
+
+                            <p class=" aboutFontSize">Enjoy the shade of our cherry trees as
+                                you join us during our spring time celebration. We invite you to our orchards
+                                for cherry, strawberry, and apple picking that is open all day. We end each
+                                evening with fresh, vegetable centric dinners along with a live show from local
+                                musicians.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 d-lg-none d-md-block ">
+                        <iframe class="ytVidMargin" src="https://www.youtube.com/embed/dgP3JRh8XOM" width="100%"
+                            height="350px" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+
+                    <div class=" col-lg-6 col-md-12 py-4 ">
+                        <div class="card-body">
+                            <p class="aboutFontSize">Open Tuesday - Sunday 1:00pm - 10:00pm <br>
+                                Closed Monday<br>
+                                Phone Number: (209) 250-0605<br>
+                                Email: info@hofrandom.com<br>
+                                Address: 80 South 1st Street, Turlock, California 95380, United States</p>
+                        </div>
 
 
 
-                </div>
-                <div class="col-lg-6 col-md-12 d-none d-lg-block  d-flex justify-content-sm-start">
-                    <iframe  src="https://www.youtube.com/embed/dgP3JRh8XOM" width="100%"
-                        height="350px" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 d-none d-lg-block  d-flex justify-content-sm-start">
+                        <iframe src="https://www.youtube.com/embed/dgP3JRh8XOM" width="100%" height="350px"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,19 +275,31 @@
     </div>
 
 
-    <div class="container-fluid d-flex justify-content-center">
+    <<div class="container-fluid d-flex justify-content-center pt-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
-                <h1 class="followMargin">FOLLOW US!</h1>
-                <div class="row d-flex justify-content-center pt-5">
-                    <img src="./images/IgImage.png" width="12%">
-                    <img src="./images/facebookicon.jpg" width="13%">
-                    <img src="./images/youtubeIcon.png" width="12%">
-                    <img src="./images/newyelpicon.png" width="12%">
-                    <div class="row">
+                <h1 id="Follow1" class="followMargin">FOLLOW US!</h1>
+                <div class="row d-flex justify-content-center pm-0 pt-5">
+                    <div class="col-2 d-flex justify-content-center px-0 " >
+                        <a href="https://www.instagram.com/_house_of_random_/?hl=en" target="_blank">
+                            <img  src="./images/IgImage.png" width="80%">
+                        </a>
                     </div>
-                   
-                  
+                    <div class="col-2 d-flex justify-content-center ">
+                        <a href="https://www.facebook.com/houseofrandomm" target="_blank">
+                            <img  src="./images/facebookicon.jpg" width="105%">
+                        </a>
+                    </div>
+                    <div class="col-2 px-2">
+                        <a href="https://www.youtube.com/channel/UCgo7tjRETn-KLu7duWUGXAw" target="_blank">
+                            <img  src="./images/youtubeIcon.png" width="80%">
+                        </a>
+                    </div>
+                    <div class="col-2 padleft">
+                        <a href="https://www.yelp.com/biz/house-of-random-turlock" target="_blank">
+                            <img  src="./images/newyelpicon.png" width="90%">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -299,8 +334,13 @@
         </div>
     </div>
 
-
+    <div class="row d-flex justify-content-center pinkBG py-4">
+        <div class="col-4">
+            <h1 class = " funFont"><marquee>I scream, you scream, we all scream for ice cream!!</marquee></h1>
+        </div>
+    </div> 
     <div class="container-fluid d-flex justify-content-center pinkBG pb-5">
+        
         <div class="container-fluid addBigPad pt-5">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -380,8 +420,8 @@
 
 
         <li>
-            <a  href = "#Top">
-             <img class="pb-2 pt-2" src="./images/houseLogo.jpg" width="124px">
+            <a href="#Top">
+                <img class="pb-2 pt-2" src="./images/houseLogo.jpg" width="124px">
             </a>
         </li>
 
