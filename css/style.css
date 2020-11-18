@@ -269,7 +269,7 @@ ul{
     color: black;
 }
 
-#exampleFormControlInput1{
+.form1{
     
     color: black;
    
@@ -288,4 +288,36 @@ ul{
 
 .padRight{
     padding-right: -10px;
+}
+
+#oneFlavor{
+    background-color: rgb(199, 120, 47);
+}
+#oneFlavor2{
+    background-color: rgb(199, 120, 47);
+}
+
+
+#oneFlavor2:active{
+    background-color:  rgb(199, 120, 47);
+}
+
+#twoFlavor{
+    background-color:  rgb(199, 120, 47);
+}
+
+#twoFlavor2{
+    background-color:  rgb(199, 120, 47);
+}
+
+#threeFlavor{
+    background-color:  rgb(199, 120, 47);
+}
+
+#threeFlavor2{
+    background-color:  rgb(199, 120, 47);
+}
+
+.blackRBG{
+    color: black;
 }
