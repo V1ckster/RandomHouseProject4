@@ -75,8 +75,8 @@
 
 .counterImg{
     background-image: url(../images/behindCounter.jpg);
-    height:325px;
-    width:500px;
+    height:355px;
+    width:650px;
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -85,8 +85,8 @@
     .storeSign{
 
     background-image: url(../images/storeSign.jpg);
-    height:325px;
-    width:500px;
+    height:355px;
+    width:650px;
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -95,8 +95,8 @@
 
     .randomFlowerImg{
         background-image: url(../images/randomFlower.jpg);
-        height:325px;
-        width:500px;
+        height:355px;
+        width:650px;
         background-position: center;
         background-size: cover;
         align-items: center;
@@ -105,8 +105,8 @@
 .imgStreet{
 
     background-image: url(../images/randomStreet.jpg);
-    height:325px;
-    width:500px;
+    height:355px;
+    width:650px;
     background-position: center;
     background-size: cover;
     align-items: center;
