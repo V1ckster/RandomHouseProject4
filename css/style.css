@@ -5,6 +5,21 @@
     height: 120px;
     max-width: 100%;
     align-items: flex-end ;
+    
+}
+
+.addBigPad{
+    padding: 0px 150px 0px 150px;
+}
+
+.addSmallPad{
+    padding: 0px 15px 0px 15px;
+}
+
+.pinkText{
+
+    color: #F70F59;
+    font-size: x-large;
 }
 
 
@@ -50,4 +65,73 @@
 .ytVidMargin{
 
    margin-left: 15%;
+}
+
+.height{
+
+    height: 500px;
+}
+
+
+.counterImg{
+    background-image: url(../images/behindCounter.jpg);
+    height:325px;
+    width:500px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    }
+
+    .storeSign{
+
+    background-image: url(../images/storeSign.jpg);
+    height:325px;
+    width:500px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+
+    }
+
+    .randomFlowerImg{
+        background-image: url(../images/randomFlower.jpg);
+        height:325px;
+        width:500px;
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+    }
+
+.imgStreet{
+
+    background-image: url(../images/randomStreet.jpg);
+    height:325px;
+    width:500px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+
+
+.form-control{
+
+    background-color: #E7BDBF;
+    color: black;
+}
+
+#exampleFormControlInput1{
+    
+    color: black;
+   
+
+}
+
+.card{
+    border: 10px solid white;
+}
+
+.contactUsMargin{
+
+    margin-left: 22%;
 }
