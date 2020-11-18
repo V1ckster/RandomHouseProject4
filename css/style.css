@@ -13,12 +13,53 @@
     font-family: cinnamonFont;
     src: url(../fonts/cinnamon\ cake.ttf);
 }
-
+@font-face {
+    font-family: plainBold;
+    src: url(../fonts/happyFont.otf);
+}
 .happyFont{
     font-family: happyFont;
-    color: white;
+    color: black;
+    background-color: pink;
+    opacity: .7;
+    border-radius: 20px;
+
 
 }
+
+.happyFont2{
+    font-family: happyFont;
+    color: rgb(3, 3, 3);
+    background-color: pink;
+    height: auto;
+    opacity: .7;
+    border-radius: 20px;
+    height: 35px;
+
+}
+.happyFont3{
+    font-family: happyFont;
+    color: white;
+    background-color: black;
+    opacity: .7;
+    border-radius: 20px;
+
+
+}
+
+.backgroundImage1{
+    background-image: url("../images/icecream.jpg");
+    overflow-x:  none;
+    overflow-y: auto;
+    height: 500px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+
+
 .carousel-item{
   
         width: 100%;
@@ -47,7 +88,7 @@ ul{
     background-color: rgb(185, 109, 109);
     border-radius: 20px;
     opacity: .7;
-    font-family: cinnamonFon  ht;
+    font-family: cinnamonFont;
 
 }
 .menuOption{
@@ -87,12 +128,14 @@ ul{
     object-fit: cover;
 }
 
-.backgroundImage1{
-    background-image: url("../images/o.jpg");
-    overflow-x:  none;
-    overflow-y: auto;
-    height: 500px;
-    object-fit: contain;
-    height: 500px;
+.box1{
+    background-color: rgb(247, 229, 229);
+    opacity: .7;
+
 }
 
+.font{
+    font-family: plainBold;
+    color: rgb(0, 0, 0);
+    
+}

@@ -17,8 +17,7 @@ let middleEastern2 = document.getElementById("menuBtn42");
 let specialtyItems2 = document.getElementById("menuBtn52");
 let randomFlavor2 = document.getElementById("menuBtn62");
 
-// array of elements
-let icon = document.getElementById("icon");
+
 
 
 let oneFlavor = document.getElementById("oneFlavor");
@@ -50,8 +49,10 @@ oneFlavor.addEventListener("click", function()
     output1.innerHTML = randomFlavorPick[ran];
     output2.innerHTML = null;
     output3.innerHTML = null;
-    
 
+    oneFlavor.setAttribute("class", "btn-lg btn-success pulse");
+    twoFlavor.setAttribute("class", "btn-lg btn-success wiggle");
+    threeFlavor.setAttribute("class", "btn-lg btn-success wiggle");
 
 });
 
@@ -62,7 +63,12 @@ twoFlavor.addEventListener("click", function(){
 
     output1.innerHTML = randomFlavorPick[ran];
     output2.innerHTML = randomFlavorPick[ran2];
-    output3.innerHTML = null;
+    output3.innerHTML = null;   
+
+    oneFlavor.setAttribute("class", "btn-lg btn-success wiggle");
+    twoFlavor.setAttribute("class", "btn-lg btn-success pulse");
+    threeFlavor.setAttribute("class", "btn-lg btn-success wiggle");
+
 });
 
 // outputs three flavors
@@ -74,6 +80,11 @@ threeFlavor.addEventListener("click", function(){
     output1.innerHTML = randomFlavorPick[ran];
     output2.innerHTML = randomFlavorPick[ran2];
     output3.innerHTML = randomFlavorPick[ran3];
+
+    oneFlavor.setAttribute("class", "btn-lg btn-success wiggle");
+    twoFlavor.setAttribute("class", "btn-lg btn-success wiggle");
+    threeFlavor.setAttribute("class", "btn-lg btn-success pulse");
+
 });
 
 
@@ -227,6 +238,8 @@ function loadData(url){
                 let output3 = document.getElementById("output3");
 
 
+
+
                 oneFlavor2.addEventListener("click", function(){
                     
                     let ran = Math.floor((Math.random() * randomFlavorPick.length));
@@ -234,6 +247,12 @@ function loadData(url){
                     output1.innerHTML = randomFlavorPick[ran];
                     output2.innerHTML = null;
                     output3.innerHTML = null;
+
+                    oneFlavor.removeAttribute("class", "wiggle");
+                    oneFlavor.setAttribute("class", "heartbeat");
+                    twoFlavor.removeAttribute("class", "wiggle");
+                    threeFlavor.removeAttribute("class", "wiggle");
+
 
                 });
                 // outputs two flavors
@@ -244,6 +263,13 @@ function loadData(url){
                     output1.innerHTML = randomFlavorPick[ran];
                     output2.innerHTML = randomFlavorPick[ran2];
                     output3.innerHTML = null;
+
+
+                    oneFlavor.setAttribute("class", "wiggle");
+                    twoFlavor.removeAttribute("class", "heartbeat");
+                    threeFlavor.removeAttribute("class", "wiggle"); 
+   
+
                 });
 
                 // outputs three flavors
