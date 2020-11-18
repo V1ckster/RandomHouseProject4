@@ -76,7 +76,7 @@
     font-family: sweetFont;
     font-weight: bolder;
     color: rgb(216, 17, 83);
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
 
 }
@@ -341,4 +341,9 @@ ul{
 
 .blackRBG{
     color: black;
+}
+
+.noPad{
+    padding: 0;
+    padding-top: -10px;
 }
