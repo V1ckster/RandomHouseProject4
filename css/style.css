@@ -201,7 +201,8 @@ ul{
 
 .aboutFontSize{
 
-    font-size: xx-large;
+    font-size: large;
+    font-family: plainBold;
 }
 
 .ytVidMargin{
